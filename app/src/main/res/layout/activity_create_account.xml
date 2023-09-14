@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.Login">
+    tools:context=".views.CreateAccount">
+
 
     <TextView
         android:id="@+id/title"
@@ -12,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
-        android:text="Hola de nuevo!"
+        android:text="Crear cuenta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
-        android:text="Tu trabajo es mas estructurado y organizado!"
+        android:text="Crea tu cuenta y siente los beneficios!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,8 +56,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emaillabel" />
 
+    <TextView
+        android:id="@+id/usuariolabel"
+        style="@style/labelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"
+        android:text="Usuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailinput" />
+
+
     <EditText
         android:id="@+id/emailinput4"
+        style="@style/inputStyle"
+        android:layout_width="349dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:inputType="text"
+        android:text="   Ingresa tu nombre de usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuariolabel" />
+
+    <TextView
+        android:id="@+id/passwordlabel"
+        style="@style/labelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="27dp"
+        android:text="Contraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailinput4" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
         style="@style/inputStyle"
         android:layout_width="349dp"
         android:layout_height="44dp"
@@ -68,32 +107,21 @@
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordlabel" />
-
-    <TextView
-        android:id="@+id/passwordlabel"
-        style="@style/labelStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="27dp"
-        android:text="Contraseña"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailinput" />
-
+    />
     <Button
         android:id="@+id/button"
         style="@style/btnStyle"
         android:layout_width="353dp"
         android:layout_height="54dp"
         android:layout_marginBottom="28dp"
-        android:text="Ingresar"
+        android:text="Crear cuenta"
         android:background="@drawable/btn_large"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-       />
+        />
 
 
 
