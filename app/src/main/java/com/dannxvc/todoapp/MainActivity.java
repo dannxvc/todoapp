@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.dannxvc.todoapp.views.CreateAccount;
 import com.dannxvc.todoapp.views.Login;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,4 +21,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this, Login.class);
         startActivity(intent);
     }
+    public void goToCreateAcc(View view){
+        Intent intent=new Intent(this, CreateAccount.class);
+        startActivity(intent);
+    }
+
 }
