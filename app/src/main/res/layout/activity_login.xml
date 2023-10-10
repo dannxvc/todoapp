@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="Hola de nuevo!"
+        android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +23,8 @@
         style="@style/descriptionStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+
         android:layout_marginTop="116dp"
         android:text="Tu trabajo es mas estructurado y organizado!"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,6 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins"
+
         android:layout_marginTop="164dp"
         android:text="Correo Electrónico"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,11 +54,26 @@
         android:layout_marginTop="12dp"
         android:ems="15"
         android:inputType="text"
-        android:text="   nombre@ejemplo.com"
+        android:hint="   nombre@ejemplo.com"
+        android:fontFamily="@font/poppins"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emaillabel" />
+
+    <TextView
+        android:id="@+id/passwordlabel"
+        style="@style/labelStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/poppins"
+
+        android:layout_marginTop="27dp"
+        android:text="Contraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailinput" />
 
     <EditText
         android:id="@+id/emailinput4"
@@ -63,22 +83,14 @@
         android:layout_marginTop="12dp"
         android:ems="15"
         android:inputType="text"
-        android:text="   Ingresa tu contraseña"
+        android:hint="   Ingresa tu contraseña"
+        android:fontFamily="@font/poppins"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordlabel" />
 
-    <TextView
-        android:id="@+id/passwordlabel"
-        style="@style/labelStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="27dp"
-        android:text="Contraseña"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailinput" />
 
     <Button
         android:id="@+id/button"

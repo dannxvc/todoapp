@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.dannxvc.todoapp.views.CreateAccount;
 import com.dannxvc.todoapp.views.Login;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class MainActivity extends AppCompatActivity {
 

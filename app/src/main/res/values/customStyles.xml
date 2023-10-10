@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="titleStyle">
+        <style name="titleStyle">
         <item name="android:textSize">24dp</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textStyle">bold</item>
@@ -17,11 +17,12 @@
     <style name="inputStyle">
         <item name="android:textSize">16dp</item>
         <item name="android:background">@color/graysoft</item>
+        <item name="android:hint">@color/grayblueish</item>
         <item name="android:textColor">@color/gray</item>
         <item name="android:radius">10dp</item>
 
         <item name="android:strokeColor">@color/gray</item>
-        <item name="android:strokeWidth">1</item>
+
     </style>
     <style name="btnStyle">
         <item name="android:textSize">18dp</item>

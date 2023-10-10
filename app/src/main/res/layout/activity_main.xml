@@ -16,6 +16,7 @@
         android:background="@drawable/btn_large"
         android:onClick="goToLogin"
         android:text="Continuar con E-mail"
+        android:fontFamily="@font/poppins"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +34,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/Main_Img"
+        android:src="@drawable/main"
         app:layout_constraintBottom_toTopOf="@+id/btncontinuarEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -52,6 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/poppins"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -61,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="30dp"
+        android:fontFamily="@font/poppins"
         android:text="Nuevo usuario?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,11 +81,12 @@
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         android:text="Regístrate"
-        android:underlineText="true"
+        android:fontFamily="@font/poppins"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/subtitle"
         app:layout_constraintTop_toBottomOf="@+id/btncontinuarEmail"
+        android:onClick="goToCreateAcc"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

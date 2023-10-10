@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="Crear nueva tarea"
+        android:fontFamily="@font/poppins"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
