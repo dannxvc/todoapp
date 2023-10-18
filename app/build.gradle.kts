@@ -15,6 +15,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        configurations.implementation {     exclude("org.jetbrains.kotlin", "kotlin-stdlib-jdk7") }
+        configurations.implementation {     exclude("org.jetbrains.kotlin", "kotlin-stdlib-jdk8") }
     }
 
     buildTypes {
@@ -27,10 +29,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
+    val nav_version = "2.7.4"
     val lifecycle_version = "2.2.0"
+
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
