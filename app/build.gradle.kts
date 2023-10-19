@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.dannxvc.todoapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.dannxvc.todoapp"
