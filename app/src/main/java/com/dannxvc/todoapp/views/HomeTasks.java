@@ -23,4 +23,8 @@ public class HomeTasks extends AppCompatActivity {
         Intent intent=new Intent(this, HomeTasks.class);
         startActivity(intent);
     }
+    public void goToLogin(View view){
+        Intent intent=new Intent(this, Login.class);
+        startActivity(intent);
+    }
 }
