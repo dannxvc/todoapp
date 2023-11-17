@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+    implementation("com.google.firebase:firebase-firestore:24.9.1")
     val nav_version = "2.7.4"
     val lifecycle_version = "2.2.0"
 

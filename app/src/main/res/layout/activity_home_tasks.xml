@@ -15,8 +15,8 @@
         android:layout_marginTop="52dp"
         android:layout_marginEnd="24dp"
         android:drawableStart="@drawable/settings"
-        android:onClick="goToLogin"
         android:fontFamily="@font/poppins"
+        android:onClick="goToLogin"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,9 +51,9 @@
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
         app:layout_constraintTop_toBottomOf="@+id/subtitle"
@@ -64,8 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
 
             <TextView
@@ -74,59 +73,56 @@
                 android:layout_height="match_parent"
                 android:background="@color/jade"
                 android:drawableStart="@drawable/flag"
-                android:text="Quehaceres"
                 android:drawablePadding="8dp"
-                android:textAlignment="textStart"
-                />
+                android:text="Quehaceres"
+                android:textAlignment="textStart" />
 
             <TextView
                 style="@style/cardDescriptionStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableStart="@drawable/circle"
-                android:textAlignment="viewStart"
                 android:drawablePadding="8dp"
                 android:text="Sacar a pasear al perro"
-                 />
+                android:textAlignment="viewStart" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-            android:background="@color/graysoft"
                 android:layout_marginVertical="5dp"
-            />
+                android:background="@color/graysoft" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     style="@style/cardTimeStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:drawableStart="@drawable/alarm"
-                    android:textAlignment="viewStart"
                     android:drawablePadding="8dp"
                     android:text="06:00 PM"
-                    android:layout_weight="1"
-                    />
+                    android:textAlignment="viewStart" />
+
                 <TextView
                     style="@style/cardDateStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vie, 18 Ago 2023"
-                    />
+                    android:text="Vie, 18 Ago 2023" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
         app:layout_constraintTop_toBottomOf="@+id/card"
@@ -137,8 +133,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
 
             <TextView
@@ -147,50 +142,46 @@
                 android:layout_height="match_parent"
                 android:background="@color/red"
                 android:drawableStart="@drawable/flag"
-                android:text="Universidad"
                 android:drawablePadding="8dp"
-                android:textAlignment="textStart"
-                />
+                android:text="Universidad"
+                android:textAlignment="textStart" />
 
             <TextView
                 style="@style/cardDescriptionStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:drawableStart="@drawable/circle"
-                android:textAlignment="viewStart"
                 android:drawablePadding="8dp"
                 android:text="Exposición desarrollo de apps"
-                />
+                android:textAlignment="viewStart" />
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/graysoft"
                 android:layout_marginVertical="5dp"
-                />
+                android:background="@color/graysoft" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     style="@style/cardTimeStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:drawableStart="@drawable/alarm"
-                    android:textAlignment="viewStart"
                     android:drawablePadding="8dp"
                     android:text="06:00 PM"
-                    android:layout_weight="1"
-                    />
+                    android:textAlignment="viewStart" />
+
                 <TextView
                     style="@style/cardDateStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vie, 18 Ago 2023"
-                    />
+                    android:text="Vie, 18 Ago 2023" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -214,4 +205,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="318dp"
+        android:layout_height="291dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="439dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
