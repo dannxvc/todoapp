@@ -117,74 +117,74 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/card"
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/card"-->
 
-        >
+<!--        >-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:orientation="vertical">-->
 
 
-            <TextView
-                style="@style/cardTitleStyle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/red"
-                android:drawableStart="@drawable/flag"
-                android:drawablePadding="8dp"
-                android:text="Universidad"
-                android:textAlignment="textStart" />
+<!--            <TextView-->
+<!--                style="@style/cardTitleStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/red"-->
+<!--                android:drawableStart="@drawable/flag"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:text="Universidad"-->
+<!--                android:textAlignment="textStart" />-->
 
-            <TextView
-                style="@style/cardDescriptionStyle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:drawableStart="@drawable/circle"
-                android:drawablePadding="8dp"
-                android:text="Exposición desarrollo de apps"
-                android:textAlignment="viewStart" />
+<!--            <TextView-->
+<!--                style="@style/cardDescriptionStyle"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:drawableStart="@drawable/circle"-->
+<!--                android:drawablePadding="8dp"-->
+<!--                android:text="Exposición desarrollo de apps"-->
+<!--                android:textAlignment="viewStart" />-->
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginVertical="5dp"
-                android:background="@color/graysoft" />
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginVertical="5dp"-->
+<!--                android:background="@color/graysoft" />-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:orientation="horizontal">-->
 
-                <TextView
-                    style="@style/cardTimeStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:drawableStart="@drawable/alarm"
-                    android:drawablePadding="8dp"
-                    android:text="06:00 PM"
-                    android:textAlignment="viewStart" />
+<!--                <TextView-->
+<!--                    style="@style/cardTimeStyle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:drawableStart="@drawable/alarm"-->
+<!--                    android:drawablePadding="8dp"-->
+<!--                    android:text="06:00 PM"-->
+<!--                    android:textAlignment="viewStart" />-->
 
-                <TextView
-                    style="@style/cardDateStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Vie, 18 Ago 2023" />
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+<!--                <TextView-->
+<!--                    style="@style/cardDateStyle"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Vie, 18 Ago 2023" />-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddTask"
@@ -207,10 +207,12 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="318dp"
-        android:layout_height="291dp"
+        android:id="@+id/recycerview"
+        android:layout_width="362dp"
+        android:layout_height="281dp"
+        android:layout_marginBottom="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="439dp" />
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

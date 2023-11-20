@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    tools:context=".views.AddNewTask">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/cardTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/jade"
+                android:drawablePadding="8dp"
+                android:textAlignment="textStart" />
+
+            <EditText
+                android:id="@+id/titleinput"
+                style="@style/inputCreateStyle"
+                android:layout_width="349dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:ems="15"
+                android:fontFamily="@font/poppins"
+                android:hint="Titulo"
+                android:inputType="text"
+                app:boxStrokeColor="@color/gray"
+                app:boxStrokeWidth="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emaillabel" />
+
+            <EditText
+                android:id="@+id/descriptioninput"
+                style="@style/inputCreateStyle"
+                android:layout_width="349dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:ems="15"
+                android:fontFamily="@font/poppins"
+                android:hint="Descripcion"
+                android:inputType="text"
+                app:boxStrokeColor="@color/gray"
+                app:boxStrokeWidth="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emaillabel" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="5dp"
+                android:background="@color/graysoft" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/cardDateStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/calendar"
+                    android:drawablePadding="8dp"
+                    android:text="09/09/2023"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    style="@style/cardDateStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/clock"
+                    android:drawablePadding="8dp"
+                    android:text="06:00 PM"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    style="@style/cardDateStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/flag_fill"
+                    android:drawablePadding="8dp"
+                    android:text="Quehaceres"
+                    android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="Agregar Tarea"
+        android:onClick="goToHome"
+        android:src="@drawable/check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card"
+        app:layout_constraintVertical_bias="0.06" />
+</androidx.constraintlayout.widget.ConstraintLayout>
