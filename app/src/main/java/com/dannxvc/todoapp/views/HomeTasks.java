@@ -30,7 +30,7 @@ public class HomeTasks extends AppCompatActivity {
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                AddNewTask.newInstance().show(getSupportFragmentManager(),AddNewTask.TAG);
             }
         });
     }
