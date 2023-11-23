@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/button"
         android:layout_width="22dp"
-        android:layout_height="51dp"
+        android:layout_height="36dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="24dp"
         android:drawableStart="@drawable/settings"
@@ -26,12 +26,14 @@
         style="@style/titleStyle"
         android:layout_width="191dp"
         android:layout_height="30dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="@font/poppins"
         android:text="Todoapp"
+        android:textFontWeight="700"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -43,148 +45,9 @@
         android:fontFamily="@font/poppins"
         android:text="La mejor plataforma para crear tareas!"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="20dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle"
-
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="vertical">
-
-
-            <TextView
-                style="@style/cardTitleStyle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/jade"
-                android:drawableStart="@drawable/flag"
-                android:drawablePadding="8dp"
-                android:text="Quehaceres"
-                android:textAlignment="textStart" />
-
-            <TextView
-                style="@style/cardDescriptionStyle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:drawableStart="@drawable/circle"
-                android:drawablePadding="8dp"
-                android:text="Sacar a pasear al perro"
-                android:textAlignment="viewStart" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginVertical="5dp"
-                android:background="@color/graysoft" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
-
-                <TextView
-                    style="@style/cardTimeStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:drawableStart="@drawable/alarm"
-                    android:drawablePadding="8dp"
-                    android:text="06:00 PM"
-                    android:textAlignment="viewStart" />
-
-                <TextView
-                    style="@style/cardDateStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Vie, 18 Ago 2023" />
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="20dp"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        android:layout_marginEnd="20dp"-->
-<!--        app:cardCornerRadius="10dp"-->
-<!--        app:cardElevation="5dp"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/card"-->
-
-<!--        >-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center_horizontal"-->
-<!--            android:orientation="vertical">-->
-
-
-<!--            <TextView-->
-<!--                style="@style/cardTitleStyle"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:background="@color/red"-->
-<!--                android:drawableStart="@drawable/flag"-->
-<!--                android:drawablePadding="8dp"-->
-<!--                android:text="Universidad"-->
-<!--                android:textAlignment="textStart" />-->
-
-<!--            <TextView-->
-<!--                style="@style/cardDescriptionStyle"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:drawableStart="@drawable/circle"-->
-<!--                android:drawablePadding="8dp"-->
-<!--                android:text="Exposición desarrollo de apps"-->
-<!--                android:textAlignment="viewStart" />-->
-
-<!--            <View-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="1dp"-->
-<!--                android:layout_marginVertical="5dp"-->
-<!--                android:background="@color/graysoft" />-->
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="center_horizontal"-->
-<!--                android:orientation="horizontal">-->
-
-<!--                <TextView-->
-<!--                    style="@style/cardTimeStyle"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:drawableStart="@drawable/alarm"-->
-<!--                    android:drawablePadding="8dp"-->
-<!--                    android:text="06:00 PM"-->
-<!--                    android:textAlignment="viewStart" />-->
-
-<!--                <TextView-->
-<!--                    style="@style/cardDateStyle"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="Vie, 18 Ago 2023" />-->
-<!--            </LinearLayout>-->
-<!--        </LinearLayout>-->
-<!--    </androidx.cardview.widget.CardView>-->
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddTask"
@@ -192,9 +55,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="320dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginTop="62dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="34dp"
         android:contentDescription="Agregar Tarea"
         android:src="@drawable/plus"
@@ -208,10 +71,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycerview"
         android:layout_width="362dp"
-        android:layout_height="281dp"
-        android:layout_marginBottom="136dp"
+        android:layout_height="590dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
