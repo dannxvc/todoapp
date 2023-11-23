@@ -20,35 +20,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subtitle"
+        android:id="@+id/loginRedirectLogin"
         style="@style/descriptionStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
-        android:text="Crea tu cuenta y siente los beneficios!"
+        android:layout_marginTop="16dp"
+
         android:fontFamily="@font/poppins"
+        android:text="Ya tienes una cuenta? Ingresa aquí"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_button" />
 
     <TextView
         android:id="@+id/emaillabel"
         style="@style/labelStyle"
         android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:text="Correo Electrónico"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="@font/poppins"
+        android:text="Correo Electrónico"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <EditText
-        android:id="@+id/emailinput"
+        android:id="@+id/signup_email"
         style="@style/inputStyle"
-        app:boxStrokeColor="@color/gray"
-        app:boxStrokeWidth="2dp"
+        android:background="@drawable/custom_edittext"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
         android:layout_height="44dp"
@@ -56,56 +55,29 @@
         android:ems="15"
         android:inputType="text"
         android:hint="nombre@ejemplo.com"
+        android:textColor="#A9B0C5"
         android:fontFamily="@font/poppins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emaillabel" />
 
-    <TextView
-        android:id="@+id/usuariolabel"
-        style="@style/labelStyle"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:fontFamily="@font/poppins"
-        android:text="Usuario"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailinput" />
-
-
-    <EditText
-        android:id="@+id/emailinput4"
-        style="@style/inputStyle"
-        android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="12dp"
-        android:ems="15"
-        android:inputType="text"
-        android:hint="Ingresa tu nombre de usuario"
-        android:fontFamily="@font/poppins"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usuariolabel" />
 
     <TextView
         android:id="@+id/passwordlabel"
         style="@style/labelStyle"
         android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins"
         android:text="Contraseña"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailinput4" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_email" />
 
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/signup_password"
         style="@style/inputStyle"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="20dp"
@@ -115,29 +87,29 @@
         android:inputType="textPassword"
         android:hint="Ingresa tu contraseña"
         android:fontFamily="@font/poppins"
+        android:background="@drawable/custom_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordlabel" />
     />
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signup_button"
         style="@style/btnStyle"
         android:layout_width="match_parent"
-        android:layout_marginHorizontal="20dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="28dp"
-        android:onClick="goToLogin"
-        android:text="Crear cuenta"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/btn_large"
-        android:textAllCaps="false"
         android:fontFamily="@font/poppins"
+        android:text="Crear cuenta"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

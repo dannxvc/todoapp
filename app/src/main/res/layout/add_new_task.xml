@@ -109,7 +109,7 @@
                     android:layout_weight="1"
                     android:drawableStart="@drawable/flag_fill"
                     android:drawablePadding="8dp"
-                    android:text="Quehaceres"
+                    android:text="Universidad"
                     android:textAlignment="viewStart" />
             </LinearLayout>
 
